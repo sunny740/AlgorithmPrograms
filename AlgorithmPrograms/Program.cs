@@ -11,7 +11,7 @@ class program
         BinarySearch binary = new BinarySearch();
         const string path1 = @"E:\BridgeLabzProject\AlgorithmPrograms\AlgorithmPrograms\AlgorithmPrograms\intvalues.txt";
         
-        Console.WriteLine("1. Binary Search\n2. Insertion Sort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram detection\n6. End Of The Process");
+        Console.WriteLine("1. Binary Search\n2. Insertion Sort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n6. Prime Numbers\n7. End Of The Process");
         while (check)
         {
             Console.WriteLine("\nTake an Option To Execute");
@@ -47,6 +47,10 @@ class program
                     anagram.Detect_Anagram();
                     break;
                 case 6:
+                    PrimeNumbers prime = new PrimeNumbers();
+                    prime.Check_Prime();
+                    break;
+                case 7:
                     check = false;
                     break;
                 default:
