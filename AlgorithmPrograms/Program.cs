@@ -11,7 +11,7 @@ class program
         BinarySearch binary = new BinarySearch();
         const string path1 = @"E:\BridgeLabzProject\AlgorithmPrograms\AlgorithmPrograms\AlgorithmPrograms\intvalues.txt";
         
-        Console.WriteLine("1.Binary Search\n");
+        Console.WriteLine("1.Binary Search\n2. Insertiion\n");
         while (check)
         {
             Console.WriteLine("\nTake an Option To Execute");
@@ -25,8 +25,11 @@ class program
                     string word = Console.ReadLine();
                     binary.binary(input_Array, word);
                     break;
-                
                 case 2:
+                    InsertionSort sort = new InsertionSort();
+                    sort.Sort();
+                    break;
+                case 3:
                     Console.WriteLine("Enter a Valid Choice");
                     break;
                 default: break;
