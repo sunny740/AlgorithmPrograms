@@ -65,6 +65,10 @@ class program
                     Demo.MessageDemo();
                     break;
                 case 10:
+                    List<int> list = new List<int>();
+                    list.MainList();
+                    break;
+                case 11:
                     check = false;
                     break;
                 default:
