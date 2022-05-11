@@ -11,7 +11,7 @@ class program
         BinarySearch binary = new BinarySearch();
         const string path1 = @"E:\BridgeLabzProject\AlgorithmPrograms\AlgorithmPrograms\AlgorithmPrograms\intvalues.txt";
         
-        Console.WriteLine("1. Binary Search\n2. Insertion Sort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n6. Prime Numbers\n7. Prime Palindrom \n8. Find Number\n9. End Of The Process");
+        Console.WriteLine("1. Binary Search\n2. Insertion Sort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n6. Prime Numbers\n7. Prime Palindrom \n8. Find Number\n9. Message Demonstration\n10. End Of The Process");
         while (check)
         {
             Console.WriteLine("\nTake an Option To Execute");
@@ -61,6 +61,10 @@ class program
                     Find.FNumber(pow);
                     break;
                 case 9:
+                    MessageDemonstration Demo = new MessageDemonstration();
+                    Demo.MessageDemo();
+                    break;
+                case 10:
                     check = false;
                     break;
                 default:
