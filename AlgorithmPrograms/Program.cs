@@ -76,10 +76,10 @@ class program
                     orderedList.AddingNode(90);
                     orderedList.AddingNode(30);
                     Console.WriteLine("The Added list is: ");
-                    orderedList.Display();
-                    orderedList.SortedList();
+                    orderedList.DisplaySort();
+                    orderedList.SortOrderedList();
                     Console.WriteLine("The Ordered list is: ");
-                    orderedList.Display();
+                    orderedList.DisplaySort();
                     break;
                 case 12:
                     check = false;

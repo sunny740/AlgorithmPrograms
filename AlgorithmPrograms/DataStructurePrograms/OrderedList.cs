@@ -20,7 +20,7 @@ namespace AlgorithmPrograms.DataStructurePrograms
         }
         public Node<T> head = null;
         public Node<T> tail = null;
-        public void AddNode(T data)
+        public void AddingNode(T data)
         {
             Node<T> newNode = new Node<T>(data);
             if (head == null)
