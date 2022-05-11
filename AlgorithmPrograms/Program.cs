@@ -1,5 +1,6 @@
 ﻿using System;
 using AlgorithmPrograms;
+using AlgorithmPrograms.DataStructurePrograms;
 
 class program
 {
@@ -11,7 +12,7 @@ class program
         BinarySearch binary = new BinarySearch();
         const string path1 = @"E:\BridgeLabzProject\AlgorithmPrograms\AlgorithmPrograms\AlgorithmPrograms\intvalues.txt";
         
-        Console.WriteLine("1. Binary Search\n2. Insertion Sort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n6. Prime Numbers\n7. Prime Palindrom \n8. Find Number\n9. Message Demonstration\n10. End Of The Process");
+        Console.WriteLine("1. Binary Search\n2. Insertion Sort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n6. Prime Numbers\n7. Prime Palindrom \n8. Find Number\n9. Message Demonstration\n10. UnOrderedList\n11. OrderedList\n12. End Of The Process");
         while (check)
         {
             Console.WriteLine("\nTake an Option To Execute");
@@ -64,11 +65,23 @@ class program
                     MessageDemonstration Demo = new MessageDemonstration();
                     Demo.MessageDemo();
                     break;
-                case 10:
-                    List<int> list = new List<int>();
-                    list.MainList();
-                    break;
+                //case 10:
+                //    List<int> list = new List<int>();
+                //    list.MainList();
+                //    break;
                 case 11:
+                    OrderedList<int> orderedList = new OrderedList<int>();
+                    orderedList.AddingNode(100);
+                    orderedList.AddingNode(50);
+                    orderedList.AddingNode(90);
+                    orderedList.AddingNode(30);
+                    Console.WriteLine("The Added list is: ");
+                    orderedList.Display();
+                    orderedList.SortedList();
+                    Console.WriteLine("The Ordered list is: ");
+                    orderedList.Display();
+                    break;
+                case 12:
                     check = false;
                     break;
                 default:
