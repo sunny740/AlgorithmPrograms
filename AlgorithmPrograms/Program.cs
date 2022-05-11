@@ -65,10 +65,10 @@ class program
                     MessageDemonstration Demo = new MessageDemonstration();
                     Demo.MessageDemo();
                     break;
-                //case 10:
-                //    List<int> list = new List<int>();
-                //    list.MainList();
-                //    break;
+                case 10:
+                    List<int> list = new List<int>();
+                    list.MainList();
+                    break;
                 case 11:
                     OrderedList<int> orderedList = new OrderedList<int>();
                     orderedList.AddingNode(100);
