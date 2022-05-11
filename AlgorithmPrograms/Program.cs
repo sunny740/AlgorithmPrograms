@@ -12,7 +12,7 @@ class program
         BinarySearch binary = new BinarySearch();
         const string path1 = @"E:\BridgeLabzProject\AlgorithmPrograms\AlgorithmPrograms\AlgorithmPrograms\intvalues.txt";
         
-        Console.WriteLine("1. Binary Search\n2. Insertion Sort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n6. Prime Numbers\n7. Prime Palindrom \n8. Find Number\n9. Message Demonstration\n10. UnOrderedList\n11. OrderedList\n12. End Of The Process");
+        Console.WriteLine("1. Binary Search\n2. Insertion Sort\n3. Bubble Sort\n4. Merge Sort\n5. Anagram Detection\n6. Prime Numbers\n7. Prime Palindrom \n8. Find Number\n9. Message Demonstration\n10. UnOrderedList\n11. OrderedList\n12. BalancedParantheses\n13. End Of The Process");
         while (check)
         {
             Console.WriteLine("\nTake an Option To Execute");
@@ -65,10 +65,10 @@ class program
                     MessageDemonstration Demo = new MessageDemonstration();
                     Demo.MessageDemo();
                     break;
-                //case 10:
-                //    List<int> list = new List<int>();
-                //    list.MainList();
-                //    break;
+                case 10:
+                    List<int> list = new List<int>();
+                    list.MainList();
+                    break;
                 case 11:
                     OrderedList<int> orderedList = new OrderedList<int>();
                     orderedList.AddingNode(100);
@@ -82,6 +82,10 @@ class program
                     orderedList.DisplaySort();
                     break;
                 case 12:
+                    BalancedParantheses<int> balancedParan = new BalancedParantheses<int>();
+                    balancedParan.Parenthesis<int>();
+                    break;
+                case 13:
                     check = false;
                     break;
                 default:
